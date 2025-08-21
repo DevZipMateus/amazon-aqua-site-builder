@@ -3,7 +3,18 @@ import { Waves, Calendar, MapPin } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="inicio" className="section-hero">
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url('/lovable-uploads/3dad2628-bf49-472e-ada3-5863c1ce9eed.png')`
+        }}
+      />
+      
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60" />
+      
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full animate-float"></div>
