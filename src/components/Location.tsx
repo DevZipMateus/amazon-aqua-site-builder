@@ -17,7 +17,7 @@ const Location = () => {
           <div className="order-2 lg:order-1">
             <div className="map-container">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093707!2d-59.9937!3d-2.0275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMDEnMzAuMCJTIDU5wrog1MKwMzciMi4wIlc!5e0!3m2!1spt-BR!2sbr!4v1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8!2d-59.9937!3d-2.0275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c0e7c9b1f1f1f%3A0x1234567890abcdef!2sRodovia%20BR-174%2C%20Km%20984%20s%2Fn%20Zona%20Rural%2C%20Pres.%20Figueiredo%20-%20AM%2C%2069735-000!5e0!3m2!1spt-BR!2sbr!4v1609459200000!5m2!1spt-BR!2sbr"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -30,7 +30,7 @@ const Location = () => {
             
             <div className="mt-4 sm:mt-6 text-center">
               <a 
-                href="https://share.google/S0mV9pHicdhtMsD42" 
+                href="https://www.google.com/maps/place/Rodovia+BR-174,+Km+984+s%2Fn+Zona+Rural,+Pres.+Figueiredo+-+AM,+69735-000/@-2.0275,-59.9937,15z" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn-outline inline-flex items-center space-x-2 text-sm sm:text-base"
@@ -51,8 +51,8 @@ const Location = () => {
                 <div>
                   <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-2">Endereço</h3>
                   <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                    RODOVIA BR 174 KM 984, 2701<br />
-                    ZONA RURAL - PRESIDENTE FIGUEIREDO - AM<br />
+                    Rodovia BR-174, Km 984 s/n<br />
+                    Zona Rural, Pres. Figueiredo - AM<br />
                     CEP: 69735-000
                   </p>
                 </div>
