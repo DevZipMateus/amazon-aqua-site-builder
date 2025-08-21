@@ -17,7 +17,7 @@ const Location = () => {
           <div className="order-2 lg:order-1">
             <div className="map-container">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8!2d-59.9937!3d-2.0275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c0e7c9b1f1f1f%3A0x1234567890abcdef!2sRodovia%20BR-174%2C%20Km%20984%20s%2Fn%20Zona%20Rural%2C%20Pres.%20Figueiredo%20-%20AM%2C%2069735-000!5e0!3m2!1spt-BR!2sbr!4v1609459200000!5m2!1spt-BR!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.4404164536424!2d-60.00467972499896!3d-2.0937398980377216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c0f8a87d5a427%3A0x3a197a6f72ac5e55!2sAmazon%20Acqua%20Park!5e0!3m2!1spt-BR!2sbr!4v1634567890123!5m2!1spt-BR!2sbr"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -30,7 +30,7 @@ const Location = () => {
             
             <div className="mt-4 sm:mt-6 text-center">
               <a 
-                href="https://www.google.com/maps/place/Rodovia+BR-174,+Km+984+s%2Fn+Zona+Rural,+Pres.+Figueiredo+-+AM,+69735-000/@-2.0275,-59.9937,15z" 
+                href="https://www.google.com/maps/place/Amazon+Acqua+Park/@-2.0937399,-60.0018997,17z/data=!3m1!4b1!4m6!3m5!1s0x926c0f8a87d5a427:0x3a197a6f72ac5e55!8m2!3d-2.0937399!4d-60.0018997!16s%2Fg%2F113dpmx26?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MDgxOC4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn-outline inline-flex items-center space-x-2 text-sm sm:text-base"
