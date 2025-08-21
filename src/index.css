@@ -101,7 +101,7 @@
   /* Button Variants - Aquatic Theme */
   .btn-hero {
     @apply bg-primary hover:bg-primary-dark text-primary-foreground 
-           px-8 py-4 rounded-full font-semibold text-lg
+           px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold text-sm sm:text-lg
            transform hover:scale-105 transition-all duration-300
            shadow-lg hover:shadow-xl;
     background: var(--gradient-aqua);
@@ -110,20 +110,20 @@
   .btn-secondary {
     @apply bg-white/20 hover:bg-accent hover:text-accent-foreground 
            text-white border-2 border-white/30 hover:border-accent
-           px-6 py-3 rounded-full font-medium
+           px-4 py-2 sm:px-6 sm:py-3 rounded-full font-medium text-sm sm:text-base
            backdrop-blur-sm transition-all duration-300;
   }
 
   .btn-outline {
     @apply bg-transparent hover:bg-primary hover:text-primary-foreground
            text-primary border-2 border-primary/60 hover:border-primary
-           px-6 py-3 rounded-full font-medium
+           px-4 py-2 sm:px-6 sm:py-3 rounded-full font-medium text-sm sm:text-base
            transition-all duration-300;
   }
 
   .btn-whatsapp {
     @apply bg-green-500 hover:bg-green-600 text-white
-           px-6 py-3 rounded-full font-medium
+           px-4 py-2 sm:px-6 sm:py-3 rounded-full font-medium text-sm sm:text-base
            transform hover:scale-105 transition-all duration-300
            shadow-lg hover:shadow-xl;
   }
@@ -131,13 +131,13 @@
   /* Card Variants */
   .card-aqua {
     @apply bg-white/90 backdrop-blur-sm border border-white/20
-           rounded-2xl p-6 shadow-lg hover:shadow-xl
+           rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-xl
            transform hover:-translate-y-1 transition-all duration-300;
   }
 
   .card-service {
     @apply bg-gradient-to-br from-white to-primary/5
-           border border-primary/10 rounded-2xl p-8
+           border border-primary/10 rounded-2xl p-6 sm:p-8
            shadow-lg hover:shadow-xl hover:border-primary/20
            transform hover:-translate-y-2 transition-all duration-500;
   }
@@ -149,25 +149,25 @@
   }
 
   .section-aqua {
-    @apply bg-gradient-to-br from-primary/5 to-accent/5 py-20;
+    @apply bg-gradient-to-br from-primary/5 to-accent/5 py-12 sm:py-20;
   }
 
   .section-white {
-    @apply bg-white py-20;
+    @apply bg-white py-12 sm:py-20;
   }
 
   /* Typography */
   .heading-hero {
-    @apply text-5xl md:text-7xl font-bold mb-6 leading-tight;
+    @apply text-3xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-6 leading-tight;
     text-shadow: 0 4px 20px rgba(0,0,0,0.3);
   }
 
   .heading-section {
-    @apply text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent;
+    @apply text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-16 bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent;
   }
 
   .text-hero {
-    @apply text-xl md:text-2xl mb-8 leading-relaxed;
+    @apply text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 leading-relaxed;
     text-shadow: 0 2px 10px rgba(0,0,0,0.2);
   }
 
@@ -190,8 +190,8 @@
 
   /* Floating WhatsApp Button */
   .whatsapp-float {
-    @apply fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600
-           text-white p-4 rounded-full shadow-2xl
+    @apply fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 bg-green-500 hover:bg-green-600
+           text-white p-3 sm:p-4 rounded-full shadow-2xl
            transform hover:scale-110 transition-all duration-300
            animate-bounce;
   }
@@ -204,7 +204,7 @@
 
   .nav-link {
     @apply text-primary hover:text-primary-dark font-medium
-           px-4 py-2 rounded-lg hover:bg-primary/10
+           px-3 py-2 sm:px-4 rounded-lg hover:bg-primary/10
            transition-all duration-300;
   }
 }
@@ -241,13 +241,19 @@
 /* Map container */
 .map-container {
   @apply rounded-2xl overflow-hidden shadow-2xl border-4 border-white;
-  height: 400px;
+  height: 300px;
+}
+
+@media (min-width: 640px) {
+  .map-container {
+    height: 400px;
+  }
 }
 
 /* Responsive utilities */
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .heading-hero {
-    @apply text-4xl;
+    @apply text-3xl;
   }
   
   .text-hero {
@@ -256,5 +262,27 @@
   
   .btn-hero {
     @apply px-6 py-3 text-base;
+  }
+}
+
+/* Container max-width adjustments for better mobile experience */
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+}
+
+/* Improved text sizing for mobile readability */
+@media (max-width: 640px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Better spacing for touch interfaces */
+@media (max-width: 768px) {
+  .btn-hero, .btn-secondary, .btn-outline, .btn-whatsapp {
+    min-height: 44px;
+    @apply flex items-center justify-center;
   }
 }

@@ -86,8 +86,8 @@ const ImageGallery = () => {
 
   return (
     <section className="section-aqua" id="galeria">
-      <div className="container mx-auto px-4">
-        <h2 className="heading-section">Nossa Galeria</h2>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-16 bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">Nossa Galeria</h2>
         
         <div 
           className="relative max-w-4xl mx-auto"
@@ -103,41 +103,41 @@ const ImageGallery = () => {
               onClick={() => handleImageClick(images[currentIndex].src)}
             />
             
-            {/* Zoom indicator */}
-            <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            {/* Zoom indicator - hidden on mobile */}
+            <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden sm:block">
               <ZoomIn className="h-5 w-5 text-white" />
             </div>
 
             {/* Navigation Buttons */}
             <button
               onClick={goToPrevious}
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 backdrop-blur-sm text-white p-3 rounded-full transition-all duration-300 hover:scale-110"
+              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 backdrop-blur-sm text-white p-2 sm:p-3 rounded-full transition-all duration-300 hover:scale-110"
               aria-label="Imagem anterior"
             >
-              <ChevronLeft className="h-6 w-6" />
+              <ChevronLeft className="h-4 w-4 sm:h-6 sm:w-6" />
             </button>
             
             <button
               onClick={goToNext}
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 backdrop-blur-sm text-white p-3 rounded-full transition-all duration-300 hover:scale-110"
+              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 backdrop-blur-sm text-white p-2 sm:p-3 rounded-full transition-all duration-300 hover:scale-110"
               aria-label="Próxima imagem"
             >
-              <ChevronRight className="h-6 w-6" />
+              <ChevronRight className="h-4 w-4 sm:h-6 sm:w-6" />
             </button>
 
             {/* Image counter */}
-            <div className="absolute bottom-4 left-4 bg-black/50 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm">
+            <div className="absolute bottom-2 sm:bottom-4 left-2 sm:left-4 bg-black/50 backdrop-blur-sm text-white px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm">
               {currentIndex + 1} / {images.length}
             </div>
           </div>
 
-          {/* Thumbnail Navigation */}
-          <div className="flex justify-center mt-6 space-x-2 overflow-x-auto pb-2">
+          {/* Thumbnail Navigation - responsive */}
+          <div className="flex justify-center mt-4 sm:mt-6 space-x-1 sm:space-x-2 overflow-x-auto pb-2 px-2">
             {images.map((image, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 transition-all duration-300 ${
+                className={`flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-lg overflow-hidden border-2 transition-all duration-300 ${
                   index === currentIndex
                     ? 'border-primary scale-110 shadow-lg'
                     : 'border-white/30 hover:border-primary/50 hover:scale-105'
@@ -154,11 +154,11 @@ const ImageGallery = () => {
 
           {/* Auto-play indicator */}
           <div className="flex justify-center mt-4">
-            <div className="flex space-x-2">
+            <div className="flex space-x-1 sm:space-x-2">
               {images.map((_, index) => (
                 <div
                   key={index}
-                  className={`h-2 w-8 rounded-full transition-all duration-300 ${
+                  className={`h-2 w-4 sm:w-8 rounded-full transition-all duration-300 ${
                     index === currentIndex 
                       ? 'bg-primary' 
                       : 'bg-white/30'
@@ -172,8 +172,8 @@ const ImageGallery = () => {
         {/* Expanded Image Dialog */}
         <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
           <DialogContent className="max-w-7xl w-full p-0 bg-black/95">
-            <DialogClose className="absolute top-4 right-4 z-50 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full p-2 transition-colors">
-              <X className="h-6 w-6 text-white" />
+            <DialogClose className="absolute top-2 right-2 sm:top-4 sm:right-4 z-50 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full p-2 transition-colors">
+              <X className="h-4 w-4 sm:h-6 sm:w-6 text-white" />
             </DialogClose>
             {selectedImage && (
               <img
