@@ -1,3 +1,4 @@
+
 import { Waves, Calendar, MapPin } from "lucide-react";
 
 const Hero = () => {
@@ -43,7 +44,7 @@ const Hero = () => {
             >
               Agendar Visita
             </a>
-            <a href="#planos" className="btn-secondary w-full sm:w-auto">
+            <a href="#planos" className="btn-hero w-full sm:w-auto">
               Ver Planos
             </a>
           </div>
