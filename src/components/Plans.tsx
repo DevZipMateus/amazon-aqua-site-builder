@@ -1,5 +1,4 @@
-
-import { Crown, Ticket, Home, Users, Percent, Gift } from "lucide-react";
+import { Crown, Ticket, Home, Users, Percent, Gift, Baby } from "lucide-react";
 
 const Plans = () => {
   return (
