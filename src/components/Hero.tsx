@@ -1,3 +1,4 @@
+
 import { Waves, Calendar, MapPin } from "lucide-react";
 
 const Hero = () => {
@@ -24,7 +25,7 @@ const Hero = () => {
             <Waves className="h-16 w-16 text-accent animate-bounce" />
           </div>
           
-          <h1 className="heading-hero">
+          <h1 className="heading-hero bg-black/30 backdrop-blur-sm rounded-2xl px-8 py-6 inline-block">
             É diversão que se fala, não é?
           </h1>
           
