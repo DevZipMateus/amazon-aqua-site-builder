@@ -1,4 +1,3 @@
-
 import { Waves, Calendar, MapPin } from "lucide-react";
 
 const Hero = () => {
@@ -11,9 +10,6 @@ const Hero = () => {
           backgroundImage: `url('/lovable-uploads/415500e0-272a-4475-8e91-4b53759ea6fe.png')`
         }}
       />
-      
-      {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60" />
       
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
