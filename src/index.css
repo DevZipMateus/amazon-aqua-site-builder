@@ -1,15 +1,34 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Amazon Acqua Park Design System - Aquatic Theme */
 
 @layer base {
   :root {
+    /* Base Colors */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
+
+    /* Brand Colors - Aquatic Blues */
+    --primary: 197 100% 31%; /* Deep aqua blue from logo */
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 197 84% 45%; /* Lighter aqua */
+    --primary-dark: 197 100% 22%; /* Darker aqua */
+
+    /* Accent Colors - Tropical Yellow */
+    --accent: 45 96% 64%; /* Warm yellow */
+    --accent-foreground: 0 0% 0%;
+    --accent-light: 48 100% 88%; /* Light yellow */
+    --accent-dark: 45 96% 54%; /* Darker yellow */
+
+    /* Semantic Colors */
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -17,80 +36,30 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 197 100% 31%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Aquatic Gradients */
+    --gradient-aqua: linear-gradient(135deg, hsl(197 100% 31%) 0%, hsl(197 84% 45%) 100%);
+    --gradient-tropical: linear-gradient(135deg, hsl(197 84% 45%) 0%, hsl(45 96% 64%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(197 100% 31%) 0%, hsl(197 84% 45%) 50%, hsl(45 96% 64%) 100%);
+    
+    /* Water Animation Variables */
+    --wave-duration: 6s;
+    --splash-duration: 2s;
   }
 
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
+    --primary: 197 84% 45%;
     --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -100,6 +69,192 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Smooth scrolling for anchor navigation */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar - aquatic theme */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-secondary;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--gradient-aqua);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary-dark;
+  }
+}
+
+@layer components {
+  /* Button Variants - Aquatic Theme */
+  .btn-hero {
+    @apply bg-primary hover:bg-primary-dark text-primary-foreground 
+           px-8 py-4 rounded-full font-semibold text-lg
+           transform hover:scale-105 transition-all duration-300
+           shadow-lg hover:shadow-xl;
+    background: var(--gradient-aqua);
+  }
+
+  .btn-secondary {
+    @apply bg-white/20 hover:bg-accent hover:text-accent-foreground 
+           text-white border-2 border-white/30 hover:border-accent
+           px-6 py-3 rounded-full font-medium
+           backdrop-blur-sm transition-all duration-300;
+  }
+
+  .btn-outline {
+    @apply bg-transparent hover:bg-primary hover:text-primary-foreground
+           text-primary border-2 border-primary/60 hover:border-primary
+           px-6 py-3 rounded-full font-medium
+           transition-all duration-300;
+  }
+
+  .btn-whatsapp {
+    @apply bg-green-500 hover:bg-green-600 text-white
+           px-6 py-3 rounded-full font-medium
+           transform hover:scale-105 transition-all duration-300
+           shadow-lg hover:shadow-xl;
+  }
+
+  /* Card Variants */
+  .card-aqua {
+    @apply bg-white/90 backdrop-blur-sm border border-white/20
+           rounded-2xl p-6 shadow-lg hover:shadow-xl
+           transform hover:-translate-y-1 transition-all duration-300;
+  }
+
+  .card-service {
+    @apply bg-gradient-to-br from-white to-primary/5
+           border border-primary/10 rounded-2xl p-8
+           shadow-lg hover:shadow-xl hover:border-primary/20
+           transform hover:-translate-y-2 transition-all duration-500;
+  }
+
+  /* Section Variants */
+  .section-hero {
+    background: var(--gradient-hero);
+    @apply min-h-screen flex items-center justify-center text-white relative overflow-hidden;
+  }
+
+  .section-aqua {
+    @apply bg-gradient-to-br from-primary/5 to-accent/5 py-20;
+  }
+
+  .section-white {
+    @apply bg-white py-20;
+  }
+
+  /* Typography */
+  .heading-hero {
+    @apply text-5xl md:text-7xl font-bold mb-6 leading-tight;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  }
+
+  .heading-section {
+    @apply text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent;
+  }
+
+  .text-hero {
+    @apply text-xl md:text-2xl mb-8 leading-relaxed;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+
+  /* Animations */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-wave {
+    animation: wave var(--wave-duration) ease-in-out infinite;
+  }
+
+  .animate-splash {
+    animation: splash var(--splash-duration) ease-in-out infinite;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  /* Floating WhatsApp Button */
+  .whatsapp-float {
+    @apply fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600
+           text-white p-4 rounded-full shadow-2xl
+           transform hover:scale-110 transition-all duration-300
+           animate-bounce;
+  }
+
+  /* Navigation */
+  .nav-glass {
+    @apply bg-white/90 backdrop-blur-md border-b border-white/20
+           fixed top-0 left-0 right-0 z-40 transition-all duration-300;
+  }
+
+  .nav-link {
+    @apply text-primary hover:text-primary-dark font-medium
+           px-4 py-2 rounded-lg hover:bg-primary/10
+           transition-all duration-300;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  33% { transform: translateY(-10px) rotate(1deg); }
+  66% { transform: translateY(-5px) rotate(-1deg); }
+}
+
+@keyframes wave {
+  0%, 100% { transform: translateX(0) scaleX(1); }
+  25% { transform: translateX(-10px) scaleX(1.1); }
+  50% { transform: translateX(0) scaleX(0.9); }
+  75% { transform: translateX(10px) scaleX(1.1); }
+}
+
+@keyframes splash {
+  0%, 100% { transform: scale(1) opacity(1); }
+  50% { transform: scale(1.2) opacity(0.8); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Map container */
+.map-container {
+  @apply rounded-2xl overflow-hidden shadow-2xl border-4 border-white;
+  height: 400px;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .heading-hero {
+    @apply text-4xl;
+  }
+  
+  .text-hero {
+    @apply text-lg;
+  }
+  
+  .btn-hero {
+    @apply px-6 py-3 text-base;
   }
 }
