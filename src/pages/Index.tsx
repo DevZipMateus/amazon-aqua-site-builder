@@ -15,7 +15,7 @@ import WhatsAppFloat from "../components/WhatsAppFloat";
 const Index = () => {
   useEffect(() => {
     // Set SEO meta tags
-    document.title = "Amazon Acqua Park - Diversão e Lazer em Presidente Figueiredo";
+    document.title = "Amazon Acqua Park - Parque Aquático em Presidente Figueiredo";
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -29,7 +29,7 @@ const Index = () => {
 
     // Open Graph tags
     const ogTags = [
-      { property: "og:title", content: "Amazon Acqua Park - Diversão e Lazer em Presidente Figueiredo" },
+      { property: "og:title", content: "Amazon Acqua Park - Parque Aquático em Presidente Figueiredo" },
       { property: "og:description", content: "Descubra o Amazon Acqua Park em Presidente Figueiredo! Piscinas, toboágua, corredeira natural, restaurante e muito mais." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://www.amazonacquapark.com.br" },
@@ -67,8 +67,8 @@ const Index = () => {
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "-2.0275",
-        "longitude": "-59.9937"
+        "latitude": "-2.0937399",
+        "longitude": "-60.0018997"
       },
       "sameAs": [
         "https://wa.me/5592992796517"
