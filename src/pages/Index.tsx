@@ -1,19 +1,23 @@
 
 import { useEffect } from "react";
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import About from "../components/About";
-import ImageGallery from "../components/ImageGallery";
-import Services from "../components/Services";
-import Testimonials from "../components/Testimonials";
-import Plans from "../components/Plans";
-import Location from "../components/Location";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
-import WhatsAppFloat from "../components/WhatsAppFloat";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import ImageGallery from "@/components/ImageGallery";
+import Services from "@/components/Services";
+import Testimonials from "@/components/Testimonials";
+import Plans from "@/components/Plans";
+import Location from "@/components/Location";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const Index = () => {
+  console.log('Index component is rendering');
+
   useEffect(() => {
+    console.log('Index useEffect running');
+    
     // Set SEO meta tags
     document.title = "Amazon Acqua Park - Parque Aquático em Presidente Figueiredo";
     
@@ -84,7 +88,11 @@ const Index = () => {
       script.textContent = JSON.stringify(structuredData);
       document.head.appendChild(script);
     }
+    
+    console.log('Index useEffect completed');
   }, []);
+
+  console.log('Index component about to render JSX');
 
   return (
     <div className="min-h-screen">
