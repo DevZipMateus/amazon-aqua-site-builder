@@ -25,7 +25,7 @@ const Hero = () => {
           
           <div className="backdrop-blur-sm rounded-2xl px-4 sm:px-8 py-4 sm:py-6 mb-6 sm:mb-8 inline-block bg-black/[0.61]">
             <p className="text-lg sm:text-xl md:text-2xl leading-relaxed max-w-2xl mx-auto">
-              Então vem para o <strong>Amazon Acqua Park</strong>! 
+              É diversão que você procura? Então vem para o <strong>Amazon Acqua Park</strong>! 
               Piscinas, toboágua, corredeira natural e muito mais diversão 
               esperando por você em Presidente Figueiredo.
             </p>
