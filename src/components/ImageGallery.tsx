@@ -44,6 +44,51 @@ const ImageGallery = () => {
     {
       src: "/lovable-uploads/351b6904-cfc6-4521-88a9-c7bd7726bd80.png",
       alt: "Vista aérea completa mostrando todas as atrações"
+    },
+    // Novas imagens da pasta "novas fotos"
+    {
+      src: "/lovable-uploads/novas fotos/Capa Acqua Park.jpeg",
+      alt: "Capa promocional do Amazon Acqua Park"
+    },
+    {
+      src: "/lovable-uploads/novas fotos/2f738d3d-9cdc-49fd-a327-d6ca4cb7c746.jpg",
+      alt: "Atrações aquáticas do Amazon Acqua Park"
+    },
+    {
+      src: "/lovable-uploads/novas fotos/48bb0a79-43c7-4c0f-8e4b-add0b1985e74.jpg",
+      alt: "Diversão garantida no parque aquático"
+    },
+    {
+      src: "/lovable-uploads/novas fotos/7fd62a16-151e-4c55-99c7-1f57e4983dbf.jpg",
+      alt: "Momentos de alegria no Amazon Acqua Park"
+    },
+    {
+      src: "/lovable-uploads/novas fotos/80F8C434-699F-4638-B6E5-2FF27125342E.jpg",
+      alt: "Experiência única no parque aquático"
+    },
+    {
+      src: "/lovable-uploads/novas fotos/87864201-da5c-4cac-9b03-c4ea933cbd3f.jpg",
+      alt: "Diversão para toda a família"
+    },
+    {
+      src: "/lovable-uploads/novas fotos/99a4ba75-aa8a-44e7-90dd-326aff5cb985.jpg",
+      alt: "Aventuras aquáticas inesquecíveis"
+    },
+    {
+      src: "/lovable-uploads/novas fotos/a3456fe6-e62d-4f12-aa84-909efd965801.jpg",
+      alt: "Lazer e entretenimento no Amazon Acqua Park"
+    },
+    {
+      src: "/lovable-uploads/novas fotos/c0098183-7eff-4d57-860d-35202a1dfd22.jpg",
+      alt: "Instalações modernas do parque aquático"
+    },
+    {
+      src: "/lovable-uploads/novas fotos/eed4bbe7-1357-42ae-b0e1-7aca6dca6f20.jpg",
+      alt: "Momentos especiais em família"
+    },
+    {
+      src: "/lovable-uploads/novas fotos/ff2d9495-220b-493b-a59e-0548f125bdca.jpg",
+      alt: "Diversão garantida para todas as idades"
     }
   ];
 
