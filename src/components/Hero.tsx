@@ -1,16 +1,10 @@
-
 import { Waves, Calendar, MapPin } from "lucide-react";
-
 const Hero = () => {
-  return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
+  return <section id="inicio" className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('/lovable-uploads/787e564c-21bd-4a96-832f-ecabd9f770ee.png')`
-        }}
-      />
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url('/lovable-uploads/787e564c-21bd-4a96-832f-ecabd9f770ee.png')`
+    }} />
       
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -29,7 +23,7 @@ const Hero = () => {
             É diversão que se fala, não é?
           </h1>
           
-          <div className="bg-black/30 backdrop-blur-sm rounded-2xl px-4 sm:px-8 py-4 sm:py-6 mb-6 sm:mb-8 inline-block">
+          <div className="backdrop-blur-sm rounded-2xl px-4 sm:px-8 py-4 sm:py-6 mb-6 sm:mb-8 inline-block bg-black/[0.61]">
             <p className="text-lg sm:text-xl md:text-2xl leading-relaxed max-w-2xl mx-auto">
               Então vem para o <strong>Amazon Acqua Park</strong>! 
               Piscinas, toboágua, corredeira natural e muito mais diversão 
@@ -38,10 +32,7 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 sm:mb-12 px-4">
-            <a 
-              href="https://wa.me/5592992796517?text=Olá! Gostaria de agendar minha visita ao Amazon Acqua Park" 
-              className="btn-hero w-full sm:w-auto"
-            >
+            <a href="https://wa.me/5592992796517?text=Olá! Gostaria de agendar minha visita ao Amazon Acqua Park" className="btn-hero w-full sm:w-auto">
               Agendar Visita
             </a>
             <a href="#planos" className="btn-hero w-full sm:w-auto">
@@ -71,8 +62,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
