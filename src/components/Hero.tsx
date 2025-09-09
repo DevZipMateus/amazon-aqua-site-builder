@@ -20,7 +20,7 @@ const Hero = () => {
           </div>
           
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight bg-black/30 backdrop-blur-sm rounded-2xl px-4 sm:px-8 py-4 sm:py-6 inline-block">
-            É diversão que se fala, não é?
+            AMAZON ACQUA PARK
           </h1>
           
           <div className="backdrop-blur-sm rounded-2xl px-4 sm:px-8 py-4 sm:py-6 mb-6 sm:mb-8 inline-block bg-black/[0.61]">
