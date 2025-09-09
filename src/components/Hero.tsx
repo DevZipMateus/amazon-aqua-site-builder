@@ -53,8 +53,8 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto px-4">
             <div className="card-aqua text-center">
               <Calendar className="h-6 w-6 sm:h-8 sm:w-8 text-primary mx-auto mb-3" />
-              <h3 className="font-semibold text-gray-800 mb-2 text-sm sm:text-base">Fins de Semana</h3>
-              <p className="text-xs sm:text-sm text-gray-600">Funcionamos sábados, domingos e feriados das 8h às 17h</p>
+              <h3 className="font-semibold text-gray-800 mb-2 text-sm sm:text-base">Horários</h3>
+              <p className="text-xs sm:text-sm text-gray-600">Sáb: 8h-18h | Dom: 8h-17h</p>
             </div>
             
             <div className="card-aqua text-center">
@@ -65,8 +65,8 @@ const Hero = () => {
             
             <div className="card-aqua text-center">
               <Waves className="h-6 w-6 sm:h-8 sm:w-8 text-primary mx-auto mb-3" />
-              <h3 className="font-semibold text-gray-800 mb-2 text-sm sm:text-base">Day Use</h3>
-              <p className="text-xs sm:text-sm text-gray-600">R$ 15,00 por pessoa (crianças até 6 anos não pagam)</p>
+              <h3 className="font-semibold text-gray-800 mb-2 text-sm sm:text-base">Ingressos</h3>
+              <p className="text-xs sm:text-sm text-gray-600">R$25 carro | R$15 moto | R$10 pessoa</p>
             </div>
           </div>
         </div>

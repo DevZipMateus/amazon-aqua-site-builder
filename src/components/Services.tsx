@@ -25,7 +25,7 @@ const Services = () => {
       icon: Car,
       title: "Estacionamento Gratuito",
       description: "Amplo estacionamento gratuito para sua comodidade e segurança",
-      features: ["Totalmente gratuito", "Espaço amplo", "Segurança", "Fácil acesso"]
+      features: ["Totalmente gratuito", "Espaço amplo e seguro", "Atendimento nas piscinas", "Fácil acesso"]
     },
     {
       icon: Wifi,

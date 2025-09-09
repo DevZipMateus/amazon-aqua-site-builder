@@ -82,7 +82,7 @@ const Contact = () => {
                   <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-primary flex-shrink-0" />
                   <div>
                     <p className="font-medium text-gray-800 text-sm sm:text-base">Horário</p>
-                    <p className="text-xs sm:text-sm text-gray-600">Fins de semana: 8h às 17h/18h</p>
+                    <p className="text-xs sm:text-sm text-gray-600">Sáb: 8h-18h | Dom: 8h-17h</p>
                   </div>
                 </div>
                 
@@ -97,8 +97,8 @@ const Contact = () => {
                 <div className="flex items-center space-x-3">
                   <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5 text-primary flex-shrink-0" />
                   <div>
-                    <p className="font-medium text-gray-800 text-sm sm:text-base">Day Use</p>
-                    <p className="text-xs sm:text-sm text-gray-600">R$ 15,00 por pessoa</p>
+                    <p className="font-medium text-gray-800 text-sm sm:text-base">Ingressos</p>
+                    <p className="text-xs sm:text-sm text-gray-600">R$25 carro | R$15 moto | R$10 pessoa</p>
                   </div>
                 </div>
               </div>

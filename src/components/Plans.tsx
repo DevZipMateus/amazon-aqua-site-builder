@@ -21,9 +21,10 @@ const Plans = () => {
             
             <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-3 sm:mb-4">Day Use</h3>
             
-            <div className="mb-4 sm:mb-6">
-              <span className="text-3xl sm:text-4xl font-bold text-accent-dark">R$ 15</span>
-              <span className="text-sm sm:text-base text-gray-600 ml-2">por pessoa</span>
+            <div className="mb-4 sm:mb-6 space-y-1">
+              <div><span className="text-2xl font-bold text-accent-dark">R$ 25</span><span className="text-sm text-gray-600 ml-2">por carro</span></div>
+              <div><span className="text-2xl font-bold text-accent-dark">R$ 15</span><span className="text-sm text-gray-600 ml-2">por moto</span></div>
+              <div><span className="text-2xl font-bold text-accent-dark">R$ 10</span><span className="text-sm text-gray-600 ml-2">por pessoa</span></div>
             </div>
             
             <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
@@ -50,10 +51,14 @@ const Plans = () => {
             </ul>
             
             <div className="bg-accent/10 rounded-lg p-3 sm:p-4 mb-4 sm:mb-6">
-              <p className="text-xs sm:text-sm text-gray-600 text-center">
-                <Baby className="h-3 w-3 sm:h-4 sm:w-4 inline mr-1" />
-                Crianças até 6 anos não pagam
+              <p className="text-xs sm:text-sm text-gray-600 text-center mb-2">
+                <strong>Regras Importantes:</strong>
               </p>
+              <ul className="text-xs text-gray-600 space-y-1">
+                <li>• Não é permitida entrada de comidas e bebidas</li>
+                <li>• Não é permitida entrada de pets</li>
+                <li>• Para festas, entrar em contato previamente</li>
+              </ul>
             </div>
             
             <a 
