@@ -45,19 +45,6 @@ const ImageGallery = () => {
       src: "/lovable-uploads/351b6904-cfc6-4521-88a9-c7bd7726bd80.png",
       alt: "Vista aérea completa mostrando todas as atrações"
     },
-    // Novas imagens da pasta "novas fotos"
-    {
-      src: "/lovable-uploads/novas fotos/Capa Acqua Park.jpeg",
-      alt: "Capa promocional do Amazon Acqua Park"
-    },
-    {
-      src: "/lovable-uploads/novas fotos/2f738d3d-9cdc-49fd-a327-d6ca4cb7c746.jpg",
-      alt: "Atrações aquáticas do Amazon Acqua Park"
-    },
-    {
-      src: "/lovable-uploads/novas fotos/48bb0a79-43c7-4c0f-8e4b-add0b1985e74.jpg",
-      alt: "Diversão garantida no parque aquático"
-    },
     {
       src: "/lovable-uploads/novas fotos/7fd62a16-151e-4c55-99c7-1f57e4983dbf.jpg",
       alt: "Momentos de alegria no Amazon Acqua Park"

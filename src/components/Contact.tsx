@@ -26,12 +26,6 @@ const Contact = () => {
                   <p className="text-sm sm:text-base text-gray-600">(92) 99104-8756</p>
                 </div>
               </div>
-              <a 
-                href="tel:+5592992796517" 
-                className="btn-outline w-full text-center block text-sm sm:text-base"
-              >
-                Ligar Agora
-              </a>
             </div>
 
             <div className="card-service">
