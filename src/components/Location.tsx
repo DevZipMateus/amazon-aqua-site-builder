@@ -8,7 +8,7 @@ const Location = () => {
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-16 bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">Localização</h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-            Estrategicamente localizado na BR-174, a apenas 107 km de Manaus
+            Estrategicamente localizado na BR-174, a apenas 101 km de Manaus
           </p>
         </div>
 

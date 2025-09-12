@@ -70,7 +70,7 @@ const About = () => {
               <div className="space-y-3 text-sm text-gray-600">
                 <div className="flex items-center justify-center space-x-2">
                   <MapPin className="h-4 w-4 text-primary flex-shrink-0" />
-                  <span>107 km de Manaus</span>
+                  <span>101 km de Manaus</span>
                 </div>
                 <div className="flex items-center justify-center space-x-2">
                   <Calendar className="h-4 w-4 text-primary flex-shrink-0" />
