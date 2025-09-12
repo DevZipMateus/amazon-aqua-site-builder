@@ -123,7 +123,7 @@ const Contact = () => {
             <div className="bg-white rounded-2xl border border-gray-200 p-4 sm:p-6">
               <h4 className="font-semibold text-gray-800 mb-3 sm:mb-4 text-sm sm:text-base">Dados da Empresa</h4>
               <div className="space-y-2 text-xs sm:text-sm text-gray-600">
-                <p><strong>Razão Social:</strong> Amazon Acqua Park</p>
+                <p><strong>Razão Social:</strong> Figueiredo Empreendimentos Turísticos Ltda</p>
                 <p><strong>CNPJ:</strong> 02.386.797/0001-32</p>
                 <p><strong>Website:</strong> www.amazonacquapark.com.br</p>
               </div>
