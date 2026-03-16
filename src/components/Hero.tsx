@@ -57,7 +57,7 @@ const Hero = () => {
             <div className="card-aqua text-center">
               <Waves className="h-6 w-6 sm:h-8 sm:w-8 text-primary mx-auto mb-3" />
               <h3 className="font-semibold text-gray-800 mb-2 text-sm sm:text-base">Ingressos</h3>
-              <p className="text-xs sm:text-sm text-gray-600">R$25 carro | R$15 moto | R$10 pessoa</p>
+              <p className="text-xs sm:text-sm text-gray-600">R$10 por pessoa | Crianças até 6 anos grátis</p>
             </div>
           </div>
         </div>
