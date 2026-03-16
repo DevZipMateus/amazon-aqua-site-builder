@@ -22,9 +22,11 @@ const Plans = () => {
             <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-3 sm:mb-4">Day Use</h3>
             
             <div className="mb-4 sm:mb-6 space-y-1">
-              <div><span className="text-2xl font-bold text-accent-dark">R$ 25</span><span className="text-sm text-gray-600 ml-2">por carro</span></div>
-              <div><span className="text-2xl font-bold text-accent-dark">R$ 15</span><span className="text-sm text-gray-600 ml-2">por moto</span></div>
               <div><span className="text-2xl font-bold text-accent-dark">R$ 10</span><span className="text-sm text-gray-600 ml-2">por pessoa</span></div>
+              <div className="flex items-center gap-2 mt-2">
+                <Baby className="h-4 w-4 text-accent-dark" />
+                <span className="text-sm text-gray-600">Crianças até 6 anos não pagam</span>
+              </div>
             </div>
             
             <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
